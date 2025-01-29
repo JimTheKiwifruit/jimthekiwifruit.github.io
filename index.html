@@ -4,28 +4,65 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>james penman | art, code, food</title>
-	<link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
+	<title>James Penman | games, code, 3d</title>
+	<link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
+	<link rel="preload" href="style.css" as="style" />
+	<link rel="preload" href="projects.yaml" as="fetch" />
 	<link href="style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
-	<article>
-		<img src="me.jpg">
-		<h1>james penman</h1>
-		<em style="margin-bottom: 10px;">art, code, food</em>
+	<main>
+		<img src="img/me.jpg" id="photo-of-me">
+		<h1 style="text-align: center;">James Penman</h1>
+		<em style="margin-bottom: 10px; text-align: center;">games, code, 3d</em>
 
-		<h2>project highlights</h2>
-		<ul>
-			<li><a href="https://jimthekiwifruit.artstation.com/projects/9ekyBQ">sci-fi vr apartment</a></li>
-		</ul>
+		<div id="social">
+			<h2>Social</h2>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/penmanjames/">linkedin</a></li>
+				<li><a href="https://bsky.app/profile/jimthekiwifruit.bsky.social">bluesky</a></li>
+				<li><a href="https://github.com/JimTheKiwifruit">github</a></li>
+				<li><a href="https://jimthekiwifruit.artstation.com">artstation</a></li>
+			</ul>
+		</div>
 
-		<h2>social</h2>
-		<ul>
-			<li><a href="https://www.linkedin.com/in/penmanjames/">linkedin</a></li>
-			<li><a href="https://jimthekiwifruit.artstation.com">artstation</a></li>
-			<li><a href="https://github.com/JimTheKiwifruit">github</a></li>
-			<li><a href="https://twitter.com/JimTehKiwifruit">twitter</a></li>
-		</ul>
-	</article>
+		<h2>⭐Featured Projects⭐</h2>
+		<div id="featured" class="project-block"></div>
+		<h2 style="margin-top: 40px;">Other Projects</h2>
+		<div id="projects" class="project-block"></div>
+
+		<a href="https://github.com/JimTheKiwifruit/jimthekiwifruit.github.io" style="text-align: center; font-size: small;">
+			> Website Source
+		</a>
+	</main>
+
+	<script type="module">
+		import YAML from "https://cdn.jsdelivr.net/npm/yaml@2.7.0/browser/index.min.js";
+		const res = await fetch("projects.yaml");
+		const docs = YAML.parseAllDocuments(await res.text()).map(d => d.toJS());
+
+		const root = $("main");
+		for (let d of docs) {
+			const el = $("<div>")
+				.addClass("post")
+				.appendTo($(d.featured ? "#featured" : "#projects"));
+				
+			const link = $(d.url ? "<a>" : "<div>").addClass("thumb").appendTo(el);
+			$("<img>").attr("src", d.image).appendTo(link);
+			const prose = $("<div>").addClass("prose").appendTo(el);
+			const title = $("<h2>").text("> " + d.title).appendTo(prose);
+			for (let l of d.description.split("\n")) {
+				$("<p>").html(l).appendTo(prose);
+			}
+			if (d.url) {
+				$("<div>").addClass("img-overlay").append($("<span>").text("More")).appendTo(link);
+				link.attr("href", d.url);
+			}
+		}
+	</script>
 </body>
 </html>
