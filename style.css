@@ -98,7 +98,6 @@ a:visited {
 	display: flex;
 	gap: 1rem;
 	width: 100%;
-	height: 200px;
 
 	/* background: none;
 	color: inherit;
@@ -117,13 +116,11 @@ a:visited {
 
 .post .thumb {
 	position: relative;
-	border-radius: 8px;
-	overflow: clip;
-}
-
-.post img {
+	display: flex;
 	width: 200px;
 	height: 200px;
+	border-radius: 8px;
+	overflow: clip;
 }
 
 .post p {
@@ -159,4 +156,10 @@ a:visited {
 .img-overlay:hover {
 	opacity: 1;
 	transition: opacity 180ms;
+}
+
+@media only screen and (max-width: 540px)  {
+	.post {
+		flex-direction: column;
+	}
 }
