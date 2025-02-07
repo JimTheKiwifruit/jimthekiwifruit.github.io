@@ -1,5 +1,14 @@
 
 ---
+title: Arcane Enforcement
+description: >
+  A small retro FPS style game featuring magic spells, mazes and worms. Made over the course of a few months in my spare time
+  using <a href="https://godotengine.org">Godot</a>.
+image: https://apartment95storage.blob.core.windows.net/portfolio/arcane-enforcement.jpg
+url: https://jimthekiwifruit.itch.io/arcane-enforcement
+featured: true
+
+---
 title: "Presence: Sci-Fi VR Experience"
 description: >
   This was a 6 week project for the Victoria University of Wellington School of Design in 2016.
@@ -16,13 +25,6 @@ description: >
   my responsibilities have included frontend and backend development with various tools including Unity, ASP.NET Core, Angular and more.
 image: https://apartment95storage.blob.core.windows.net/portfolio/homear.jpg
 url: https://www.homear.io/
-featured: true
-
----
-title: Untitled Worm Game (WIP)
-description: >
-  An in development retro FPS style game featuring magic spells, mazes and worms, made using <a href="https://godotengine.org">Godot</a>.
-image: https://apartment95storage.blob.core.windows.net/portfolio/worm-project.jpg
 featured: true
 
 ---
