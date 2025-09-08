@@ -1,10 +1,19 @@
 
 ---
+title: Fish on a Water Slide
+description: >
+  Slip and slide your way through an infinite water slide!
+  GMTK Game Jam 2025 entry. My responsibilities were gameplay and sound. Made with Godot.
+image: https://f004.backblazeb2.com/file/apartment95-public/fishwaterslide.jpg
+url: https://jimthekiwifruit.itch.io/fish-on-a-water-slide
+featured: true
+
+---
 title: Arcane Enforcement
 description: >
   A small retro FPS style game featuring magic spells, mazes and worms. Made over the course of a few months in my spare time
-  using <a href="https://godotengine.org">Godot</a>.
-image: https://apartment95storage.blob.core.windows.net/portfolio/arcane-enforcement.jpg
+  using Godot.
+image: https://f004.backblazeb2.com/file/apartment95-public/arcane-enforcement.jpg
 url: https://jimthekiwifruit.itch.io/arcane-enforcement
 featured: true
 
@@ -14,16 +23,15 @@ description: >
   This was a 6 week project for the Victoria University of Wellington School of Design in 2016.
   The theme for the project was "presence", which I took literally and created this VR experience set in a grungy futuristic apartment.
   Viewed on an Oculus Rift and controlled with a Leap Motion controller.
-image: https://apartment95storage.blob.core.windows.net/portfolio/presence-artstationthumb.jpg
+image: https://f004.backblazeb2.com/file/apartment95-public/presence-artstationthumb.jpg
 url: https://jimthekiwifruit.artstation.com/projects/9ekyBQ
-featured: true
 
 ---
 title: homeAR
 description: >
   Augmented reality app for real estate visualisation for <a href="https://nz.linkedin.com/company/reactarlabs">Reactar Labs</a>. Launched in 2019,
   my responsibilities have included frontend and backend development with various tools including Unity, ASP.NET Core, Angular and more.
-image: https://apartment95storage.blob.core.windows.net/portfolio/homear.jpg
+image: https://f004.backblazeb2.com/file/apartment95-public/homear.jpg
 url: https://www.homear.io/
 featured: true
 
@@ -32,7 +40,7 @@ title: GiftKiwi
 description: >
   A web app for creating wishlists for any occasion. Registered recipients have the ability claim items in order to prevent double gifting
   (never revealed to the list creator).
-image: https://apartment95storage.blob.core.windows.net/portfolio/giftkiwi.jpg
+image: https://f004.backblazeb2.com/file/apartment95-public/giftkiwi.jpg
 url: https://giftkiwi.app/
 
 ---
@@ -40,7 +48,7 @@ title: Wellington VR Digital City Model
 description: >
   With the amazing team at NEC Smart Cities from 2016-2018, I worked on a prototype city data visualisation platform using Unity and the HTC Vive,
   in collaboration with Wellington City Council.
-image: https://apartment95storage.blob.core.windows.net/portfolio/nec-dcm.jpg
+image: https://f004.backblazeb2.com/file/apartment95-public/nec-dcm.jpg
 url: https://www.youtube.com/watch?v=vWnSjAzOSRs
 
 ---
@@ -48,7 +56,7 @@ title: Movie Swiper
 description: >
   Unable to find a movie to watch? This experimental web app proves you and a partner a semi-random selection of recent movies across a range of
   streaming services. You both swipe through them depending on whether you like them based on the poster until you both find a match.
-image: https://apartment95storage.blob.core.windows.net/portfolio/movie-swiper.jpg
+image: https://f004.backblazeb2.com/file/apartment95-public/movie-swiper.jpg
 url: https://movieswiper.netlify.app/
 
 ---
@@ -56,10 +64,10 @@ title: Untitled Space Game (WIP)
 description: >
   A browser game about exploring future space colonies throughout the milky way galaxy. Travel to real stars, populated using a subset
   of the <a href="https://astronexus.com/projects/hyg">HYG dataset</a>.
-image: https://apartment95storage.blob.core.windows.net/portfolio/space-game.jpg
+image: https://f004.backblazeb2.com/file/apartment95-public/space-game.jpg
 
 ---
 title: Project Sneaky (WIP)
 description: >
   A stealth first-person game inspired by Deus Ex. A complex endeavor I should like to pursue someday.
-image: https://apartment95storage.blob.core.windows.net/portfolio/sneaky.jpg
+image: https://f004.backblazeb2.com/file/apartment95-public/sneaky.jpg
